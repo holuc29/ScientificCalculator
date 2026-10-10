@@ -1,0 +1,19 @@
+[package]
+name = "calc-gui"
+description = "egui desktop frontend for the scicalc engine"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+[[bin]]
+name = "scicalc-gui"
+path = "src/main.rs"
+
+[dependencies]
+calc-core = { path = "../calc-core" }
+eframe = "0.36"
+ratex-render = { version = "0.1.14", features = ["embed-fonts"] }
+ratex-layout = "0.1.14"
+ratex-parser = "0.1.14"
+ratex-types = "0.1.14"
+png = "0.17"

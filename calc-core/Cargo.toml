@@ -1,0 +1,9 @@
+[package]
+name = "calc-core"
+description = "Arbitrary-precision scientific calculator engine (no UI dependencies)"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+[dependencies]
+astro-float = "0.9.6"

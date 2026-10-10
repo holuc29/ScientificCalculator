@@ -1,0 +1,14 @@
+[workspace]
+resolver = "2"
+members = ["calc-core", "calc-cli", "calc-gui"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["scicalc contributors"]
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true

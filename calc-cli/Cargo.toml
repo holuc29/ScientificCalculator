@@ -1,0 +1,14 @@
+[package]
+name = "calc-cli"
+description = "Command-line / REPL frontend for the scicalc engine"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+[[bin]]
+name = "scicalc"
+path = "src/main.rs"
+
+[dependencies]
+calc-core = { path = "../calc-core" }
+rustyline = "18"
